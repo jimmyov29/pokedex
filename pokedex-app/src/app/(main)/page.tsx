@@ -1,7 +1,11 @@
+import PokemonCard from "@/components/PokemonCard/PokemonCard";
+
 function MainPage() {
-    return ( 
-        <></>
-     );
+    return (
+      <>
+        <PokemonCard/>
+      </>
+    );
 }
 
 export default MainPage;
