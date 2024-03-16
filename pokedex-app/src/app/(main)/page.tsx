@@ -1,9 +1,9 @@
-import PokemonCard from "@/components/PokemonCard/PokemonCard";
+import PokemonList from "@/components/PoikemonList/PokemonList";
 
 function MainPage() {
     return (
       <>
-        <PokemonCard/>
+        <PokemonList/>
       </>
     );
 }

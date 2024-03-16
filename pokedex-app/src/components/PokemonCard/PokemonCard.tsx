@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function PokemonCard() {
   return (
-    <section className=" shadow-2xl rounded-2xl p-6 bg-primary-900 w-[302px] grid gap-6 hover:scale-105 transition ease-linear duration-200">
+    <section className=" shadow-xl rounded-2xl p-6 bg-primary-900 w-[302px] grid gap-6 hover:scale-105 transition ease-linear duration-200">
       <article className=" flex  rounded-2xl p-4 bg-primary-500 justify-around ">
         <h3 className=" font-extrabold text-lg "> #01</h3>
         <h3 className=" w-fit"> pokemon </h3>
