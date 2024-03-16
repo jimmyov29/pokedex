@@ -1,13 +1,23 @@
+// export interface ICardPokemon {
+//   id: number;
+//   name: string;
+//   is_main_series: boolean;
+//   generation: Generation;
+//   names: Name[];
+//   effect_entries: WelcomeEffectEntry[];
+//   effect_changes: EffectChange[];
+//   flavor_text_entries: FlavorTextEntry[];
+//   pokemon: Pokemon[];
+// }
 export interface ICardPokemon {
-  id: number;
+  count: number;
+  next: string;
+  previous: null;
+  results: Result[];
+}
+export interface Result {
   name: string;
-  is_main_series: boolean;
-  generation: Generation;
-  names: Name[];
-  effect_entries: WelcomeEffectEntry[];
-  effect_changes: EffectChange[];
-  flavor_text_entries: FlavorTextEntry[];
-  pokemon: Pokemon[];
+  url: string;
 }
 
 export interface EffectChange {
