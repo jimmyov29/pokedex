@@ -1,4 +1,4 @@
-import PokemonList from "@/components/PoikemonList/PokemonList";
+import PokemonList from "@/components/PokemonList/PokemonList";
 
 function MainPage() {
     return (
