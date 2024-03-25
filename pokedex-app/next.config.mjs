@@ -28,7 +28,10 @@ const nextConfig = {
     return config;
   },
   images: {
-    remotePatterns: [{ protocol: "https", hostname: "i.ibb.co" }],
+    remotePatterns: [
+      { protocol: "https", hostname: "i.ibb.co" },
+      { protocol: "https", hostname: "raw.githubusercontent.com" },
+    ],
   },
 };
 

@@ -1,9 +1,14 @@
-
-const url = "https://pokeapi.co/api/v2";
+const urlBase = "https://pokeapi.co/api/v2";
 
 export class PokemonApi {
-  async getPokemonData() {
-    const response = await fetch(`${url}/pokemon`);
+  async getPokemonList() {
+    const response = await fetch(`${urlBase}/pokemon?limit=150&offset=0`);
+    const data = await response.json();
+    return data;
+  }
+
+  async getPokemonData(url: string){
+    const response = await fetch(url);
     const data = await response.json();
     return data;
   }
