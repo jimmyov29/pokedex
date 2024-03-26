@@ -1,6 +1,7 @@
 import { PokemonApi } from "@/api/pokemon";
 import { IPokemonInfo, Result } from "@/interfaces/pokemon.types";
 import Image from "next/image";
+import Link from "next/link";
 import { useEffect, useState } from "react";
 
 export default function PokemonCard({ pokemon }: { pokemon: Result }) {
@@ -19,6 +20,7 @@ export default function PokemonCard({ pokemon }: { pokemon: Result }) {
     fetchPokemonInfo();
   }, []);
   return (
+    <Link href={`/pokemon/${pokemonData?.id}`}>
     <section className=" shadow-xl rounded-2xl p-6 bg-primary-900 w-[302px] grid gap-6 hover:scale-105 transition ease-linear duration-200">
       <article className=" flex  rounded-2xl p-4 bg-primary-500 justify-around ">
         <h3 className=" font-extrabold text-lg "> #{pokemonData?.id}</h3>
@@ -73,5 +75,7 @@ export default function PokemonCard({ pokemon }: { pokemon: Result }) {
         </fieldset>
       </article>
     </section>
+
+    </Link>
   );
 }
