@@ -8,7 +8,7 @@ interface Props {
 }
 function PokemonById({ params }: Props) {
   const pokemonApi = new PokemonApi();
-  const pokemon = pokemonApi.getPokemonById(params.id);
+  // const pokemon = pokemonApi.getPokemonById(params.id);
 
   return (
     <section>

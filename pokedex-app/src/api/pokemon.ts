@@ -23,7 +23,7 @@ export class PokemonApi {
     }
   }
 
-  async getPokemonById(id: number) {
+  async getPokemonCharacteristicsById(id: number) {
     try {
       const response = await fetch(`${urlBase}/pokemon/${id}`);
       const data = await response.json();
